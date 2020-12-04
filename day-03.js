@@ -1,11 +1,11 @@
 // task http://www.codewars.com/kata/571f832f07363d295d001ba8
 
 const trueOrFalse = (val) => {
+  if (isNaN(val)) return 'false';
   switch (val) {
     case 0: return 'false';
     case '': return 'false';
     case -0: return 'false';
-    case NaN: return 'false';
     case null: return 'false';
     case false: return 'false';
     case undefined: return 'false';
