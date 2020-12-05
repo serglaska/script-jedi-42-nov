@@ -17,7 +17,7 @@ const padIt = (str, n) => {
 // task http://www.codewars.com/kata/5721a78c283129e416000999
 
 const pickIt = (arr) => {
-  let odd = [], even = [];
+  const odd = [], even = [];
   for (let i = 0; i < arr.length; i++) {
     arr[i] % 2 === 0 ? even.push(arr[i]) : odd.push(arr[i]);
   };
@@ -28,7 +28,7 @@ const pickIt = (arr) => {
 // task http://www.codewars.com/kata/5721c189cdd71194c1000b9b
 
 const grabDoll = (dolls) => {
-  let bag = [];
+  const bag = [];
   const kitty = 'Hello Kitty';
   const barbie = 'Barbie doll';
   for (let i = 0; i < dolls.length; i++) {
@@ -44,7 +44,7 @@ const grabDoll = (dolls) => {
 // task http://www.codewars.com/kata/5722b3f0bd5583cf44001000
 
 const giveMeFive = (obj) => {
-  let arrValues = [];
+  const arrValues = [];
   for (let values in obj) {
     if (values.length === 5) arrValues.push(values);
     if (obj[values].length === 5) arrValues.push(obj[values]);
