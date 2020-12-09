@@ -2,7 +2,6 @@
 
 const whatNumberIsIt = (n) => {
   switch (n) {
-    case 0: 'Input number is 0';
     case Infinity: return 'Input number is Number.POSITIVE_INFINITY';
     case Number.MIN_VALUE: return 'Input number is Number.MIN_VALUE';
     case Number.MAX_VALUE: return 'Input number is Number.MAX_VALUE';
@@ -15,8 +14,8 @@ const whatNumberIsIt = (n) => {
 
 const colorOf = (...rgb) => {
   const newArr = rgb.map(el => {
-    let trick = el.toString(16);
-    return trick.length === 1 ? '0' + trick : trick;
+    let convertTo16system = el.toString(16);
+    return convertTo16system.length === 1 ? '0' + convertTo16system : convertTo16system;
   });
   
   return `#${newArr.join('')}`;

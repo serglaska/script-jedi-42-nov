@@ -45,9 +45,9 @@ const grabDoll = (dolls) => {
 
 const giveMeFive = (obj) => {
   const arrValues = [];
-  for (let values in obj) {
-    if (values.length === 5) arrValues.push(values);
-    if (obj[values].length === 5) arrValues.push(obj[values]);
+  for (const value in obj) {
+    if (value.length === 5) arrValues.push(value);
+    if (obj[value].length === 5) arrValues.push(obj[value]);
   };
 
   return arrValues;
