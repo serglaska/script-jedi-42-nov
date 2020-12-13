@@ -152,10 +152,11 @@ describe('initialize a `Map`', function () {
 
 function mapToArray(map) {
   return Array.from(map);
-}
+};
+
 function assertMapsEqual(map1, map2) {
   assert.deepEqual(mapToArray(map1), mapToArray(map2));
-}
+};
 
 // task  http://tddbin.com/#?kata=es6/language/map/has
 
