@@ -4,7 +4,7 @@ Function.prototype.call = function (value, ...args) {
   return this.apply(value, args)
 };
 
-// task 
+// task http://www.codewars.com/kata/anonymous-returns
 
 name = 'The Window';
 
