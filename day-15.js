@@ -52,7 +52,6 @@ const infiniteLoop = (arr, direction, steps) => {
 // task http://www.codewars.com/kata/572cb264362806af46000793
 
 const threeInOne = arr => {
-  if (arr.length === 3) return [arr.reduce((accum, el) => accum + el)];
   let counter = 0;
   const splitArr = [...Array(arr.length / 3)].map(_ => {
     const item = arr.slice(counter, counter + 3);

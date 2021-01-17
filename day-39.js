@@ -8,7 +8,6 @@ const createIterator = array => {
     next: () => {
       return index < array.length
         ? {
-
           value: array[index],
           done: index >= array.length ? ((index = array.length), true) : (index++, false),
         }
